@@ -10,6 +10,9 @@
   <img src="https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge" alt="MIT license badge" />
   <img src="https://img.shields.io/badge/Android-API%2027%2B-3ddc84?style=for-the-badge&logo=android" alt="Android badge" />
   <img src="https://img.shields.io/badge/Kotlin-JVM%2017-7f52ff?style=for-the-badge&logo=kotlin" alt="Kotlin badge" />
+  <a href="https://jitpack.io/#kkokotero/KoreX">
+    <img src="https://img.shields.io/jitpack/v/github/kkokotero/KoreX?style=for-the-badge&color=25a162" alt="JitPack Version" />
+  </a>
 </p>
 
 KoreX is an Android-first utility library focused on DX, predictable APIs, and reusable building blocks for app development.
@@ -30,14 +33,13 @@ The repository also includes `SampleApp`, a standalone demo that exercises the p
 ```kotlin
 repositories {
     maven("https://jitpack.io")
-    maven("https://maven.pkg.github.com/kkokotero/KoreX")
 }
 ```
 
 
 ```kotlin
 dependencies {
-    implementation("io.github.kkokotero:korex:1.0.3")
+    implementation("com.github.kkokotero:KoreX:1.0.3")
 }
 ```
 
