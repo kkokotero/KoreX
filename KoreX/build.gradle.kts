@@ -5,6 +5,7 @@ version = rootProject.version
 
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
     id("maven-publish")
 }
 
@@ -29,6 +30,10 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+    }
+
+    buildFeatures {
+        compose = true
     }
 
     androidResources {
@@ -109,12 +114,12 @@ afterEvaluate {
                 credentials {
                     username = project.findProperty("gpr.user")?.toString()
                         ?: project.readLocalProperty("gpr.user")
-                                ?: System.getenv("GITHUB_ACTOR")
-                                ?: ""
+                        ?: System.getenv("GITHUB_ACTOR")
+                        ?: ""
                     password = project.findProperty("gpr.key")?.toString()
                         ?: project.readLocalProperty("gpr.key")
-                                ?: System.getenv("GITHUB_TOKEN")
-                                ?: ""
+                        ?: System.getenv("GITHUB_TOKEN")
+                        ?: ""
                 }
             }
         }

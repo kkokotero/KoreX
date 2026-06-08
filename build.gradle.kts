@@ -1,5 +1,5 @@
 group = "io.github.kkokotero"
-version = "1.0.1"
+version = "1.0.2"
 
 plugins {
     alias(libs.plugins.android.library) apply false
