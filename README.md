@@ -27,7 +27,13 @@ The repository also includes `SampleApp`, a standalone demo that exercises the p
 
 ## Installation
 
-### Published artifact
+```kotlin
+repositories {
+    maven("https://jitpack.io")
+    maven("https://maven.pkg.github.com/kkokotero/KoreX")
+}
+```
+
 
 ```kotlin
 dependencies {
