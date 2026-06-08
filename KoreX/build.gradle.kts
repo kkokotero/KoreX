@@ -5,10 +5,9 @@ version = rootProject.version
 
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
+    kotlin("android")
     id("maven-publish")
 }
-
 fun Project.readLocalProperty(key: String): String? {
     val localPropertiesFile = rootProject.file("local.properties")
     if (!localPropertiesFile.exists()) return null
