@@ -37,7 +37,7 @@ repositories {
 
 ```kotlin
 dependencies {
-    implementation("io.github.kkokotero:korex:1.0.1")
+    implementation("io.github.kkokotero:korex:1.0.3")
 }
 ```
 
